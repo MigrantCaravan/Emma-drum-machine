@@ -1,6 +1,6 @@
-# Next.js Drum Machine
+# Emma's Drum Machine
 
-This repo is meant to be used as part of an exercise in [The Joy of React](https://www.joyofreact.com/).
+This repo is a clone of an exercise in [The Joy of React](https://www.joyofreact.com/).
 
 ## Running a development server
 

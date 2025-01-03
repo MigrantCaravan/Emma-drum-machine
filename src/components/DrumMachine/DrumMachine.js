@@ -5,6 +5,7 @@ import useSound from "use-sound";
 import styles from "./DrumMachine.module.css";
 import { SoundContext } from "../../context/SoundContext";
 const SOUND_SRC = "/909-drums.mp3";
+const SOUND_ALT = "/170-pikachu.mp3";
 
 function DrumMachine() {
   const { soundEnabled } = React.useContext(SoundContext);
@@ -18,12 +19,22 @@ function DrumMachine() {
     soundEnabled,
   });
 
+  const [FX] = useSound(SOUND_ALT, {
+    sprite: {
+      pikachu: [0, 2000],
+    },
+    volume: 0.3,
+    interrupt: true,
+    soundEnabled: soundEnabled,
+  });
+
   return (
     <div className={styles.wrapper}>
       <button onClick={() => play({ id: "kick" })}>Kick</button>
       <button onClick={() => play({ id: "hihat" })}>Hat</button>
       <button onClick={() => play({ id: "snare" })}>Snare</button>
       <button onClick={() => play({ id: "cowbell" })}>Cowbell</button>
+      <button onClick={() => FX({ id: "pikachu" })}>Pikachu</button>
     </div>
   );
 }
