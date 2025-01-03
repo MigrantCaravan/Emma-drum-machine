@@ -1,32 +1,19 @@
-import React from 'react';
+import React from "react";
 
-import MaxWidthWrapper from '../components/MaxWidthWrapper';
-import DrumMachine from '../components/DrumMachine';
-import styles from './page.module.css';
+import MaxWidthWrapper from "../components/MaxWidthWrapper";
+import DrumMachine from "../components/DrumMachine";
+import styles from "./page.module.css";
 
 function Home() {
   return (
-    <MaxWidthWrapper
-      as="main"
-      className={styles.wrapper}
-    >
-      <h1>
-        Welcome to the zaniest place on the ‘Web!
-      </h1>
+    <MaxWidthWrapper as="main" className={styles.wrapper}>
+      <h1>Bienvenidos al rincón más ruidoso de internet</h1>
       <p>
-        Hey there, fellow netizens! If you're
-        reading this, you've stumbled upon the
-        coolest corner of the internet: my awesome
-        website. Get ready to embark on a
-        nostalgic journey back to the groovy era
-        of the 90s, where the web was wild, and
-        creativity ran free!
+        hola, soy Emma. Soy una desarrolladora de software y me encanta la
+        música. Me encanta tanto que he creado esta página web para que puedas
+        crear música con una batería. ¡Espero que te guste!
       </p>
-      <p>
-        I've created the gnarliest drum machine
-        ever. Press the buttons to hear the music.
-        Tubular!
-      </p>
+      <p>Puedes tocar la bartería presionando los botones</p>
       <DrumMachine />
     </MaxWidthWrapper>
   );
