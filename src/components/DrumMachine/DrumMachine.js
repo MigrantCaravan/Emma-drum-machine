@@ -28,13 +28,46 @@ function DrumMachine() {
     soundEnabled: soundEnabled,
   });
 
+  const handlePlay = (id) => {
+    play({ id });
+  };
+
+  const handleFX = (id) => {
+    FX({ id });
+  };
+
   return (
     <div className={styles.wrapper}>
-      <button onClick={() => play({ id: "kick" })}>Kick</button>
-      <button onClick={() => play({ id: "hihat" })}>Hat</button>
-      <button onClick={() => play({ id: "snare" })}>Snare</button>
-      <button onClick={() => play({ id: "cowbell" })}>Cowbell</button>
-      <button onClick={() => FX({ id: "pikachu" })}>Pikachu</button>
+      <button
+        onClick={() => handlePlay("kick")}
+        onTouchStart={() => handlePlay("kick")}
+      >
+        Kick
+      </button>
+      <button
+        onClick={() => handlePlay("hihat")}
+        onTouchStart={() => handlePlay("hihat")}
+      >
+        Hat
+      </button>
+      <button
+        onClick={() => handlePlay("snare")}
+        onTouchStart={() => handlePlay("snare")}
+      >
+        Snare
+      </button>
+      <button
+        onClick={() => handlePlay("cowbell")}
+        onTouchStart={() => handlePlay("cowbell")}
+      >
+        Cowbell
+      </button>
+      <button
+        onClick={() => handleFX("pikachu")}
+        onTouchStart={() => handleFX("pikachu")}
+      >
+        Pikachu
+      </button>
     </div>
   );
 }
