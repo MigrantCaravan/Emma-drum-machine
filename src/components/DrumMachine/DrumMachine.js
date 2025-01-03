@@ -17,6 +17,7 @@ function DrumMachine() {
       cowbell: [968, 200],
     },
     soundEnabled,
+    interrupt: true,
   });
 
   const [FX] = useSound(SOUND_ALT, {
