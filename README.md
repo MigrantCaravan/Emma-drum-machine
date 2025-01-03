@@ -2,6 +2,8 @@
 
 This repo is a clone of an exercise in [The Joy of React](https://www.joyofreact.com/).
 
+![Emma's Drum Machine](./public/emma-drum-machine.png)
+
 ## Running a development server
 
 First, install the dependencies:
